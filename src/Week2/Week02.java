@@ -1,5 +1,7 @@
 package Week2;
 
+import helpers.InputReader;
+
 public class Week02 
 {
     public static final String CONSOLE_CLEAR = "\033[H\033[2J";
@@ -15,5 +17,24 @@ public class Week02
         System.out.println();
         System.out.println(" by Nicholas Day and Derek Peacock");
         System.out.println();
-    }     
+
+
+
+
+/* 
+        String name = InputReader.getString("Enter your name > ");
+        System.out.println("Hello " + name);
+        String id = InputReader.getString("enter your id : ");
+        System.out.println("Welcome back Student : " +  id );
+        int length = InputReader.getInt("Enter Length:");
+        int hight = InputReader.getInt("Enter Hight:"); 
+        int area = (length*hight) ;
+        System.out.println("The area is : " + area );
+*/
+        int number1 = InputReader.getInt("Enter the first number:");
+        int number2 = InputReader.getInt("Enter the second number:");
+        int average = (number1+number2)/2;
+        System.out.println("The average is : " + average );
+
+    }    
 }
